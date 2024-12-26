@@ -1,0 +1,101 @@
+[
+  {
+    "name": "Deluxe Room",
+    "image": "https://sitecore-cd-imgr.shangri-la.com/MediaFiles/9/8/4/%7B984A8BD0-FC33-4BC1-BF9A-661E56C4412F%7D72d8e1b8f63648b3a21cabed0642f70c.jpg",
+    "price": "$120",
+    "reviews": 150,
+    "description": "A luxurious room with all amenities for a perfect stay."
+  },
+  {
+    "name": "Standard Room",
+    "image": "https://i0.wp.com/www.thelodhi.com/wp-content/uploads/sites/3/2020/10/room1-slider1-1.jpg?resize=1300%2C730&ssl=1",
+    "price": "$80",
+    "reviews": 80,
+    "description": "A comfortable room for a budget-friendly stay."
+  },
+  {
+    "name": "Suite Room",
+    "image": "https://dbijapkm3o6fj.cloudfront.net/resources/1805,1004,1,6,4,0,600,450/-4608-/20210504010539/suite-room.jpeg",
+    "price": "$250",
+    "reviews": 200,
+    "description": "A spacious suite with high-end facilities for a luxurious experience."
+  },
+  {
+    "name": "Executive Room",
+    "image": "https://d2e5ushqwiltxm.cloudfront.net/wp-content/uploads/sites/12/2016/02/09120423/Pullman-Executive-Room-King-Bed-1.jpg",
+    "price": "$180",
+    "reviews": 120,
+    "description": "An elegant room offering a great view and premium services."
+  },
+  {
+    "name": "Presidential Suite",
+    "image": "https://www.theleela.com/prod/content/assets/styles/tl_1920_735/public/aio-banner/dekstop/presidential-suite-leela-bhartiya-city-hotel-bangalore.jpg.webp?VersionId=5Q50JMrQskqZ3RWjjFpaAt5kBiRGzVD.&itok=iU9-gp0u",
+    "price": "$500",
+    "reviews": 250,
+    "description": "An exclusive suite with a private balcony and premium amenities."
+  },
+  {
+    "name": "Family Room",
+    "image": "https://focus.independent.ie/thumbor/w5cXWIyjdZaadQfjn64uLWMqpq0=/0x60:1642x965/960x640/prod-mh-ireland/0c86cafe-aa0a-11ed-a105-0210609a3fe2.jpg",
+    "price": "$150",
+    "reviews": 180,
+    "description": "A spacious room perfect for family stays with modern facilities."
+  },
+  {
+    "name": "Penthouse Suite",
+    "image": "https://www.fourseasons.com/alt/img-opt/~70.1530.0,0000-206,2500-3000,0000-1687,5000/publish/content/dam/fourseasons/images/web/BEV/BEV_1901_original.jpg",
+    "price": "$1000",
+    "reviews": 300,
+    "description": "A luxurious penthouse with stunning views and a private pool."
+  },
+  {
+    "name": "Superior Room",
+    "image": "https://www.thelowryhotel.com/media/3996/2.jpg?anchor=center&mode=crop&quality=50&width=1280&height=530&rnd=133444381200000000",
+    "price": "$100",
+    "reviews": 60,
+    "description": "A room with superior comfort and beautiful interior design."
+  },
+
+  {
+    "name": "Garden Room",
+    "image": "https://www.kingsmillshotel.com/wp-content/uploads/2022/12/Garden-Rooms-outward-facing-800x525.jpg",
+    "price": "$110",
+    "reviews": 75,
+    "description": "A tranquil room with a beautiful garden view."
+  },
+  {
+    "name": "Ocean View Room",
+    "image": "https://www.azurabermuda.com/wp-content/uploads/2023/02/Ocean-View-Guest-Room-1680x1120.jpg",
+    "price": "$160",
+    "reviews": 140,
+    "description": "A room with stunning views of the ocean and modern amenities."
+  },
+  {
+    "name": "Honeymoon Suite",
+    "image": "https://rosycruise.com/wp-content/uploads/2020/06/Vip_1-scaled.jpg",
+    "price": "$350",
+    "reviews": 220,
+    "description": "A romantic suite designed for couples with luxury and privacy."
+  },
+  {
+    "name": "Mountain View Room",
+    "image": "https://static.arocdn.com/Sites/50/powerscourthotel2021/uploads/images/FullLengthImages/extralargeimage64/One_bedroom_Suite_Mountain_View_1.jpg",
+    "price": "$170",
+    "reviews": 90,
+    "description": "A room with beautiful mountain views and cozy interiors."
+  },
+  {
+    "name": "City View Room",
+    "image": "https://thelibrary.mgmresorts.com/transform/k49IIxxEVK07IQLz/TCO157083008.jpg?io=transform:fill,width:760,height:428&format=webp&quality=75",
+    "price": "$130",
+    "reviews": 110,
+    "description": "A modern room with a great view of the city skyline."
+  },
+  {
+    "name": "Beachfront Room",
+    "image": "https://media.cnn.com/api/v1/images/stellar/prod/160920113053-beachfront-hotel-20-resort-at-pedregal-2.jpg?q=w_1900,h_1069,x_0,y_0,c_fill",
+    "price": "$200",
+    "reviews": 160,
+    "description": "A room with direct access to the beach and incredible views."
+  }
+]
