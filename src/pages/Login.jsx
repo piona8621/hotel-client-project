@@ -138,7 +138,7 @@ const Login = () => {
                     {loading ? 'Loading...' : 'Login'}
                 </button>
             </form>
-            {error && <p className="mt-4 text-yellow-500 bg-opacity-40">{error}</p>}
+            
             <button
                 onClick={handleGoogleLogin}
                 className="mt-4 w-full py-2 px-4 bg-yellow-500 bg-opacity-40 text-white font-semibold rounded-md hover:bg-yellow-600"
