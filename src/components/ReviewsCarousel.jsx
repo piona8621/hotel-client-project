@@ -36,7 +36,7 @@ const ReviewsCarousel = () => {
         {reviews.map((review) => (
           <div
             key={review._id}
-            className="p-6 bg-gradient-to-r bg-purple-900 bg-opacity-30 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300"
+            className="p-6 bg-gradient-to-r bg-violet-900 bg-opacity-70 shadow-lg rounded-lg hover:shadow-xl transition-shadow duration-300"
           >
             <h3 className=" text-xl font-serif italic  text-white">
               <span className="text-yellow-400"> 👤 Name:</span> {review.user_name}

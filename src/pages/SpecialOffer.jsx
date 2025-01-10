@@ -8,14 +8,14 @@ const SpecialOffers = () => {
   const offers = [
     {
       id: 1,
-      title: "Stay 3 Nights, Get 1 Free!",
+      title: "Stay 3 Nights,Get 1 Free!",
       description: "Enjoy a free night on us when you book 3 nights at any of our locations.",
       image: "https://www.ganggaisland.com/wp-content/uploads/2018/08/GIR-Instagram-Contest-1200x800.jpg", // Corrected URL
     },
     {
       id: 2,
       title: "Summer Sale - 50% Off",
-      description: "Save 20% on bookings for the summer season. Limited time offer!",
+      description: "Save 50% on bookings for the winter season. Limited time offer!",
       image: "https://www.thelinkdirectories.co.uk/wp-content/uploads/2022/11/Nov-blog-photo.jpg", // Replace with an actual image URL
     },
   ];
@@ -49,9 +49,9 @@ const SpecialOffers = () => {
                   <div className="p-4">
                     <h3 className="text-2xl font-semibold font-serif italic text-white">{offer.title}</h3>
                     <p className="text-gray-200 mt-2 italic">{offer.description}</p>
-                    <button className="mt-4 px-6 py-2 font-serif italic text-white bg-purple-500 bg-opacity-40 text-xl font-semibold  rounded-full hover:bg-yellow-600">
+                    {/* <button className="mt-4 px-6 py-2 font-serif italic text-white bg-purple-500 bg-opacity-40 text-xl font-semibold  rounded-full hover:bg-yellow-600">
                       🚀 Book Now
-                    </button>
+                    </button> */}
                   </div>
                 </div>
               ))}
@@ -70,3 +70,67 @@ const SpecialOffers = () => {
 };
 
 export default SpecialOffers;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

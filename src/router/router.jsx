@@ -14,6 +14,9 @@ import PrivateRoute from "../router/PrivateRoute";
 import ReviewModal from "../pages/ReviewModal";
 import Register from "../pages/Register";
 import NotFound from "../pages/NotFound";
+import About from "../pages/About";
+import Contact from "../pages/Contact";
+import Gallery from "../pages/Gallery";
 
 
 
@@ -30,6 +33,18 @@ const router = createBrowserRouter([
       {
         path: '/rooms',
         element: <Rooms></Rooms>,
+      },
+      {
+        path:'about',
+        element:<About></About>,
+      },
+      {
+        path: 'contact',
+        element: <Contact></Contact>,
+      },
+      {
+        path: 'gallery',
+        element: <Gallery></Gallery>
       },
       {
         path: '/login',

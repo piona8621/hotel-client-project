@@ -340,7 +340,7 @@ const MyBookings = () => {
                 <th className="text-center">Room Name</th>
                 <th className="text-center ext-center ">Price</th>
                 <th className="text-center ext-center">Booking Date</th>
-                <th className="text-purple-200 ext-center   text-center">Actions</th>
+                <th className="text-yellow-400 ext-center text-center">Actions</th>
               </tr>
             </thead>
             <tbody>
@@ -353,9 +353,9 @@ const MyBookings = () => {
                       className="w-20 sm:w-20 mx-auto rounded-lg"
                     />
                   </td>
-                  <td className="text-lg ext-center  font-bold text-white">{booking.roomName}</td>
-                  <td className="text-lg ext-center  font-bold text-yellow-500">{booking.price}</td>
-                  <td className="text-lg ext-center sm:table-cell text-white font-semibold">{new Date(booking.bookingDate).toLocaleDateString()}</td>
+                  <td className="text-lg ext-center font-serif italic  font-bold text-white">{booking.roomName}</td>
+                  <td className="text-lg ext-center font-serif italic font-bold text-yellow-500">{booking.price}</td>
+                  <td className="text-lg ext-center font-serif italic sm:table-cell text-white font-semibold">{new Date(booking.bookingDate).toLocaleDateString()}</td>
 
                   <td className="space-x-2 ">
                     <button
@@ -468,6 +468,153 @@ const MyBookings = () => {
 };
 
 export default MyBookings;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

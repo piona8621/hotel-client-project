@@ -7,6 +7,214 @@
 
 
 
+// import React, { useState } from 'react';
+// import { useNavigate } from 'react-router-dom';
+// import { toast } from 'react-toastify';
+// import Swal from 'sweetalert2';
+// import AuthContext from '../AuthContext/AuthContext';
+// import { useContext } from 'react';
+// import { Helmet } from 'react-helmet-async';
+// import signup from '../assets/image/Tablet login-cuate.svg'
+
+// const Register = () => {
+//     const { createUser, updateUserProfile } = useContext(AuthContext);
+//     const navigate = useNavigate();
+//     const [name, setName] = useState('');
+//     const [email, setEmail] = useState('');
+//     const [photoURL, setPhotoURL] = useState('');
+//     const [password, setPassword] = useState('');
+//     const [confirmPassword, setConfirmPassword] = useState('');
+//     const [error, setError] = useState('');
+
+
+//     const validatePassword = (password) => {
+//         const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
+//         return regex.test(password);
+//     };
+
+//     const handleSubmit = async (e) => {
+//         e.preventDefault();
+
+//         // Password validation
+//         if (!validatePassword(password)) {
+//             Swal.fire({
+//                 title: 'Error!',
+//                 text: 'Password is not valid Please try again.',
+//                 icon: 'error',
+//                 confirmButtonText: 'OK',
+//               });
+              
+//         }
+
+//         // Password confirmation
+//         if (password !== confirmPassword) {
+//             toast.error("Passwords do not match!");
+//             return;
+//         }
+
+//         try {
+//             // Create the user
+//             const userCredential = await createUser(email, password);
+
+//             // Update the user's profile after successful registration
+//             const user = userCredential.user;
+//             await updateUserProfile(name, photoURL);
+
+//             toast.success("Registration successful!");
+//             navigate("/"); // Navigate to home page after registration
+
+//             // Show SweetAlert after registration
+//             Swal.fire({
+//                 title: 'Registration Successful!',
+//                 // text: 'You can now log in.',
+//                 icon: 'success',
+//                 // confirmButtonText: '',
+//             }).then(() => {
+//               navigate('/')
+//             });
+          
+//         } catch (err) {
+//             console.error(err);
+//             Swal.fire({
+//               title: 'Error!',
+//               text: 'There was an issue with your already registration. Please try again.',
+//               icon: 'error',
+//               confirmButtonText: 'OK',
+//             });
+//         }
+//     };
+
+//     return (
+//         <>
+//         <div className="max-w-md mx-auto mt-10 p-6 bg-purple-600 bg-opacity-40 rounded-lg shadow-md">
+//             <Helmet>
+//                 <title>Register</title>
+//             </Helmet>
+//             <h2 className="text-4xl font-serif italic text-purple-300 mb-4">Register</h2>
+//             <form onSubmit={handleSubmit}>
+//                 {/* Form Fields */}
+//                 <div className="mb-4">
+//                     <label htmlFor="name" className="block text-lg font-semibold text-white">Name</label>
+//                     <input
+//                         type="text"
+//                         id="name"
+//                         className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+//                         value={name}
+//                         onChange={(e) => setName(e.target.value)}
+//                         required
+//                     />
+//                 </div>
+//                 <div className="mb-4">
+//                     <label htmlFor="email" className="block text-lg font-semibold text-white">Email</label>
+//                     <input
+//                         type="email"
+//                         id="email"
+//                         className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+//                         value={email}
+//                         onChange={(e) => setEmail(e.target.value)}
+//                         required
+//                     />
+//                 </div>
+//                 <div className="mb-4">
+//                     <label htmlFor="photoURL" className="block text-lg font-bold text-white">Photo URL (optional)</label>
+//                     <input
+//                         type="text"
+//                         id="photoURL"
+//                         className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+//                         value={photoURL}
+//                         onChange={(e) => setPhotoURL(e.target.value)}
+//                     />
+//                 </div>
+//                 <div className="mb-4">
+//                     <label htmlFor="password" className="block text-lg font-semibold text-white">Password</label>
+//                     <input
+//                         type="password"
+//                         id="password"
+//                         className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+//                         value={password}
+//                         onChange={(e) => setPassword(e.target.value)}
+//                         required
+//                     />
+//                 </div>
+//                 <div className="mb-6">
+//                     <label htmlFor="confirmPassword" className="block text-lg font-semibold text-white">Confirm Password</label>
+//                     <input
+//                         type="password"
+                        
+//                         id="confirmPassword"
+//                         className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+//                         value={confirmPassword}
+//                         onChange={(e) => setConfirmPassword(e.target.value)}
+//                         required
+//                     />
+//                 </div>
+
+
+
+
+
+//                 <button
+//                     type="submit"
+//                     className="w-full py-2 text-lg px-4 bg-purple-600 bg-opacity-40 text-white font-semibold rounded-md hover:bg-indigo-700"
+//                 >
+//                     Register
+//                 </button>
+//             </form>
+//             <p className="mt-4 text-center text-xl text-yellow-500 font-semibold ">
+//                 Already have an account?{' '}
+//                 <a href="/login" className="text-white text-xl font-serif italic hover:text-yellow-500">Login here</a>
+//             </p>
+
+//         </div>
+
+
+
+
+// </>
+//     );
+// };
+
+// export default Register;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
@@ -14,6 +222,7 @@ import Swal from 'sweetalert2';
 import AuthContext from '../AuthContext/AuthContext';
 import { useContext } from 'react';
 import { Helmet } from 'react-helmet-async';
+import signup from '../assets/image/Sign up-pana.svg';
 
 const Register = () => {
     const { createUser, updateUserProfile } = useContext(AuthContext);
@@ -24,7 +233,6 @@ const Register = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
-
 
     const validatePassword = (password) => {
         const regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{6,}$/;
@@ -41,8 +249,7 @@ const Register = () => {
                 text: 'Password is not valid Please try again.',
                 icon: 'error',
                 confirmButtonText: 'OK',
-              });
-              
+            });
         }
 
         // Password confirmation
@@ -65,103 +272,159 @@ const Register = () => {
             // Show SweetAlert after registration
             Swal.fire({
                 title: 'Registration Successful!',
-                // text: 'You can now log in.',
                 icon: 'success',
-                // confirmButtonText: '',
             }).then(() => {
-              navigate('/')
+                navigate('/');
             });
-          
+
         } catch (err) {
             console.error(err);
             Swal.fire({
-              title: 'Error!',
-              text: 'There was an issue with your already registration. Please try again.',
-              icon: 'error',
-              confirmButtonText: 'OK',
+                title: 'Error!',
+                text: 'There was an issue with your registration. Please try again.',
+                icon: 'error',
+                confirmButtonText: 'OK',
             });
         }
     };
 
     return (
-        <div className="max-w-md mx-auto mt-10 p-6 bg-purple-600 bg-opacity-40 rounded-lg shadow-md">
+        <div className="flex flex-col md:flex-row max-w-4xl mx-auto mt-10 p-6 bg-purple-600 bg-opacity-40 rounded-lg shadow-md">
             <Helmet>
                 <title>Register</title>
             </Helmet>
-            <h2 className="text-4xl font-serif italic text-purple-300 mb-4">Register</h2>
-            <form onSubmit={handleSubmit}>
-                {/* Form Fields */}
-                <div className="mb-4">
-                    <label htmlFor="name" className="block text-lg font-semibold text-white">Name</label>
-                    <input
-                        type="text"
-                        id="name"
-                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        required
-                    />
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="email" className="block text-lg font-semibold text-white">Email</label>
-                    <input
-                        type="email"
-                        id="email"
-                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-                        value={email}
-                        onChange={(e) => setEmail(e.target.value)}
-                        required
-                    />
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="photoURL" className="block text-lg font-bold text-white">Photo URL (optional)</label>
-                    <input
-                        type="text"
-                        id="photoURL"
-                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-                        value={photoURL}
-                        onChange={(e) => setPhotoURL(e.target.value)}
-                    />
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="password" className="block text-lg font-semibold text-white">Password</label>
-                    <input
-                        type="password"
-                        id="password"
-                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-                        value={password}
-                        onChange={(e) => setPassword(e.target.value)}
-                        required
-                    />
-                </div>
-                <div className="mb-6">
-                    <label htmlFor="confirmPassword" className="block text-lg font-semibold text-white">Confirm Password</label>
-                    <input
-                        type="password"
-                        
-                        id="confirmPassword"
-                        className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
-                        value={confirmPassword}
-                        onChange={(e) => setConfirmPassword(e.target.value)}
-                        required
-                    />
-                </div>
-                <button
-                    type="submit"
-                    className="w-full py-2 text-lg px-4 bg-purple-600 bg-opacity-40 text-white font-semibold rounded-md hover:bg-indigo-700"
-                >
-                    Register
-                </button>
-            </form>
-            <p className="mt-4 text-center text-xl text-yellow-500 font-semibold ">
-                Already have an account?{' '}
-                <a href="/login" className="text-white text-xl font-serif italic hover:text-yellow-500">Login here</a>
-            </p>
+            <div className="md:w-1/2">
+                <h2 className="text-4xl font-serif italic text-purple-300 mb-4">Register</h2>
+                <form onSubmit={handleSubmit}>
+                    {/* Form Fields */}
+                    <div className="mb-4">
+                        <label htmlFor="name" className="block text-xl font-serif italic font-semibold text-white">Name</label>
+                        <input
+                            type="text"
+                            id="name"
+                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div className="mb-4">
+                        <label htmlFor="email" className="block text-xl font-serif italic font-semibold text-white">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div className="mb-4">
+                        <label htmlFor="photoURL" className="block text-xl font-serif italic font-bold text-white">Photo URL (optional)</label>
+                        <input
+                            type="text"
+                            id="photoURL"
+                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+                            value={photoURL}
+                            onChange={(e) => setPhotoURL(e.target.value)}
+                        />
+                    </div>
+                    <div className="mb-4">
+                        <label htmlFor="password" className="block text-xl font-serif italic font-semibold text-white">Password</label>
+                        <input
+                            type="password"
+                            id="password"
+                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+                            value={password}
+                            onChange={(e) => setPassword(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <div className="mb-6">
+                        <label htmlFor="confirmPassword" className="block text-xl font-serif italic font-semibold text-white">Confirm Password</label>
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md"
+                            value={confirmPassword}
+                            onChange={(e) => setConfirmPassword(e.target.value)}
+                            required
+                        />
+                    </div>
+                    <button
+                        type="submit"
+                        className="w-full py-2 text-xl font-serif italic px-4 bg-purple-600 bg-opacity-40 text-white font-semibold rounded-md hover:bg-indigo-700"
+                    >
+                        Register
+                    </button>
+                </form>
+                <p className="mt-4 font-serif italic text-center text-xl text-yellow-500 font-semibold ">
+                    Already have an account?{' '}
+                    <a href="/login" className="text-white text-xl font-serif italic hover:text-yellow-500">Login here</a>
+                </p>
+            </div>
+
+            {/* Image */}
+            <div className="hidden md:block md:w-1/2 pl-8 mt-24">
+                <img
+                    src={signup} // Replace with your image URL
+                    alt="Registration"
+                    className="w-full h-auto rounded-md"
+                />
+            </div>
         </div>
     );
 };
 
 export default Register;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

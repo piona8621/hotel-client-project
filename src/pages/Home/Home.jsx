@@ -10,6 +10,9 @@ import SpecialOffers from '../SpecialOffer';
 import WhyChooseUs from '../../components/WhyChooseUs';
 import EventsAndConferences from '../../components/EventsAndConferences';
 import { Helmet } from 'react-helmet-async';
+import HighlightedHotelRooms from '../../components/HighlightedHotelRooms';
+import NewsletterSection from '../../components/NewsletterSection';
+// import HighlightedProductsPage from '../../components/HighlightedProductsPage';
 
 
 
@@ -27,10 +30,12 @@ const Home = () => {
       <FeaturedRooms></FeaturedRooms>
       <ReviewsCarousel></ReviewsCarousel>
     <EventsAndConferences></EventsAndConferences>
+    <HighlightedHotelRooms></HighlightedHotelRooms>
 <SpecialOffers></SpecialOffers>
 <HotelMap></HotelMap>
 <WhyChooseUs></WhyChooseUs>
 <Amenities></Amenities>
+<NewsletterSection></NewsletterSection>
 
 
     
