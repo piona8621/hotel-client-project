@@ -1,3 +1,10 @@
+
+
+![Screenshot 2025-02-05 022839](https://github.com/user-attachments/assets/47cd86e1-3ecf-4907-a017-c50e6e71b996)
+
+
+
+
 # Hotel Booking Platform
 
 ## Purpose
