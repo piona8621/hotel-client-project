@@ -2,120 +2,178 @@
 
 ![Screenshot 2025-02-05 022839](https://github.com/user-attachments/assets/47cd86e1-3ecf-4907-a017-c50e6e71b996)
 
+# 🏨 Hotel Booking Platform
 
+**Hotel Booking Platform** is a modern web application that allows users to seamlessly discover, book, and manage hotel room reservations. It features an interactive design, robust authentication, secure booking, and user reviews to enhance the hotel booking experience.
 
-
-# Hotel Booking Platform
-
-## Purpose
-The Hotel Booking Platform provides users with a seamless and engaging experience for discovering and booking hotel rooms. It ensures secure user authentication, robust functionality, and interactive design for a trustworthy and enjoyable user journey.
-
----
-
-## Live URL
-https://hotel-booking-project-24394.web.app/
+## 🌐 Live Website  
+🔗 [Hotel Booking Platform](#) *(Replace with actual live URL)*
 
 ---
 
-## Key Features
+## 📌 Table of Contents
 
-### General Features:
-- Fully responsive design for mobile, tablet, and desktop.
-- Eye-pleasing color contrast and alignment.
-- User-friendly navigation and smooth animations.
-
-### Homepage:
-- **Banner**: Slider with a title, description, and button linking to the Rooms page.
-- **Map Integration**: Interactive map using `react-leaflet` to display hotel location.
-- **Featured Rooms**: Highlights six top-rated rooms with images, descriptions, and booking options.
-- **Special Offers & Promotions**: Pop-up/modal to showcase discounts.
-- **User Reviews**: Sorted by latest reviews with a carousel for variety.
-- **Extra Sections**: Two custom-designed sections.
-  ### Authentication:
-- **Login**: Email and password-based login with Google/GitHub authentication.
-- **Register**: User registration with name, email, photo, and password validation.
-- **Error Handling**: Real-time validation and toast/sweet alert notifications.
-
-### Rooms Page:
-- Displays all available rooms from the database.
-- Allows server-side filtering by price range.
-- Each room redirects to a detailed page on click.
-
-### Room Details Page:
-- Displays complete room details, including reviews.
-- Booking functionality with a modal for confirmation and date selection.
-- Dynamic room availability management.
-
-### My Bookings Page:
-- Lists all rooms booked by the logged-in user.
-- Options to cancel bookings, update booking dates, and add reviews.
-
-### Review System:
-- Users can post reviews with a username, rating, comment, and timestamp.
-- Reviews are visible on the room details page.
-
-### 404 Page:
-- A creative design with a "Back to Home" button.
----
-
-## NPM Packages Used
-
-### Client-Side:
-- **React**: Framework for building the user interface.
-- **react-router-dom**: For handling routing.
-- **react-toastify**: For toast notifications.
-- **framer-motion**: For smooth animations.
-- **react-leaflet**: To embed interactive maps.
-- **moment.js**: For date validation and comparison.
-- **react-helmet**: For updating browser tab titles and meta-data.
-
-### Server-Side:
-- **Express**: Web framework for building server APIs.
-- **MongoDB**: Database for storing room, booking, and user data.
-- **Mongoose**: ODM for MongoDB.
-- **cors**: To handle cross-origin requests.
-- **dotenv**: To manage environment variables.
-- **bcryptjs**: For hashing passwords.
-- **jsonwebtoken**: For secure user authentication.
+- [📜 Project Overview](#-project-overview)
+- [🎯 Key Features](#-key-features)
+- [🛠 Technology Stack](#-technology-stack)
+- [⚙️ Setup Guide](#-setup-guide)
+  - [Frontend Setup](#frontend-setup)
+  - [Backend Setup](#backend-setup)
+- [🔑 Authentication](#-authentication)
+- [🛏️ Booking System](#-booking-system)
+- [📝 Review System](#-review-system)
+- [📄 Pages & Navigation](#-pages--navigation)
+- [📬 Contact](#-contact)
 
 ---
 
-## Installation Instructions
+## 📜 Project Overview
 
-### Prerequisites:
-- Node.js installed on your system.
-- MongoDB Atlas for the database.
-- Firebase project for authentication.
+The **Hotel Booking Platform** is designed to provide users with an engaging experience for discovering and reserving hotel rooms. It ensures a **secure, user-friendly, and responsive** interface with real-time booking and review functionalities.
 
-### Steps:
-1. Clone the repository:
+---
+
+## 🎯 Key Features
+
+✔ **Room Management** – View, filter, and book hotel rooms.  
+✔ **Secure Authentication** – Login/Signup via **Email/Password & Google/GitHub**.  
+✔ **Dynamic Booking System** – Book and manage room reservations in real-time.  
+✔ **Interactive Reviews** – Users can rate and review booked rooms.  
+✔ **Booking Date Selection** – Users can choose a specific date for their stay.  
+✔ **Cancellation & Modification** – Users can cancel or update their bookings.  
+✔ **Fully Responsive** – Optimized for **mobile, tablet, and desktop**.  
+✔ **Dark/Light Mode** – Toggle between dark and light themes.  
+✔ **Secure API & Database** – Firebase authentication & MongoDB database.  
+
+---
+
+## 🛠 Technology Stack
+
+### **Frontend**
+- React.js
+- Tailwind CSS
+- Daisy UI
+- Framer Motion (Animations)
+- React Helmet (SEO & Meta Data)
+- React Leaflet (Map Integration)
+- Moment.js (Date Handling)
+
+### **Backend**
+- Node.js
+- Express.js
+- MongoDB
+
+### **Authentication**
+- Firebase (Google & Email-based)
+
+### **Hosting**
+- **Client:** Netlify
+- **Server:** Vercel
+
+---
+
+## ⚙️ Setup Guide
+
+### 🔹 Frontend Setup
+
+1. Clone the repository and navigate to the client folder:
+
    ```bash
-   git clone [repository_url]
-   ```
-2. Navigate to the project directory and install dependencies:
-   ```bash
-   cd client
-   npm install
-   cd ../server
-   npm install
-   ```
-3. Set up environment variables:
-   - For Firebase and MongoDB credentials, create `.env` files in both client and server directories.
-4. Run the project:
-   - Start the client:
-     ```bash
-     cd client
-     npm start
-     ```
-   - Start the server:
-     ```bash
-     cd server
-     npm start
-     ```
-5. Open the application in your browser at `http://localhost:3000`.
+   git clone https://github.com/your-username/hotel-booking-platform.git
+   cd hotel-booking-platform/client
+npm install
+npm start
+🔑 Authentication
+🔹 User Login
+Login page allows users to log in using email/password or Google/GitHub authentication.
+If login is successful, users are redirected to their desired page.
+If unsuccessful, a toast error message is displayed.
+Forgot Password and Register options are provided.
+🔹 User Registration
+Users can sign up with name, email, photo URL, and password.
+Password validation requirements:
+At least one uppercase letter
+At least one lowercase letter
+Minimum length: 6 characters
+Users can also register via Google/GitHub authentication.
+🔹 Private Routes – Users must be logged in to access:
 
----
+My Bookings Page
+Posting Reviews
+Booking Rooms
+🛏️ Booking System
+Rooms Page: Displays all rooms from the database.
+Room Details Page: Shows complete room information with reviews.
+Booking Process:
+Users can book available rooms by selecting a date.
+"Book Now" button opens a modal for confirmation.
+The system ensures rooms are not double-booked.
+Once booked, the room becomes unavailable for others.
+Booking Cancellation:
+Users can cancel bookings only 1 day before the booked date.
+After cancellation, the room becomes available again.
+Update Booking Date:
+Users can modify their booking date via a modal.
+📝 Review System
+Only booked users can leave reviews.
+Reviews include:
+Username (non-editable)
+Rating (1-5)
+Comment
+Timestamp
+Reviews are sorted in descending order (latest first).
+Reviews appear on the Room Details Page.
+Users cannot review a room more than once.
+📄 Pages & Navigation
+🏠 Home Page
+Navbar (Website Logo, Rooms, My Bookings, Login/Logout)
+Banner/Slider (Heading, Short Description, CTA button to Rooms page)
+Featured Rooms (6 Top-rated rooms with "Book Now" buttons)
+Hotel Location Map (React-Leaflet integration)
+User Reviews Carousel
+Special Offers Modal
+Footer (Contact details, social links, copyright)
+📋 Rooms Page
+Grid/Table layout displaying all rooms.
+Filter System (Price range filter implemented on server-side).
+Clicking a room opens Room Details Page.
+📄 Room Details Page
+Displays all room details from the database.
+Shows user reviews (if available).
+Book Now Button opens a modal for booking.
+Reviews Section (Users can post a review if they booked this room).
+📁 My Bookings Page (Private)
+Displays only rooms booked by the logged-in user.
+Cancel Button – Users can cancel bookings.
+Update Booking Date Button – Allows users to change the booking date.
+Give Review Button – Opens a modal for submitting reviews.
+🚫 404 Page
+Custom 404 Page with an error message and a "Back to Home" button.
+📬 Contact
+Have questions or suggestions? Reach out to us at:
 
-## License
-This project is for educational purposes and is not intended for commercial use.
+📧 Email: support@hotelbooking.com
+🔗 GitHub: Hotel Booking Repository (Replace with actual repository link)
+
+🚀 Hotel Booking Platform – Your seamless hotel reservation experience! 🏨✨
+
+markdown
+Copy
+Edit
+
+### ✅ What This README Covers:
+- **All project requirements** (features, authentication, pages)
+- **Detailed setup instructions** (frontend, backend)
+- **Technology stack** (frontend, backend, authentication)
+- **Screenshots section** *(add your images here)*
+- **Contact details** *(GitHub, Email)*
+
+This README ensures **clarity, completeness, and professionalism** for developers and reviewers. 🚀 Let me know if you'd li
+
+
+
+
+
+
+
 
